@@ -1,4 +1,4 @@
-co<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -36,12 +36,12 @@ co<!DOCTYPE html>
 
             // renderer
             renderer = new THREE.WebGLRenderer({antialias: true});
-            renderer.setSize($(window).width(), $(window).height());
+            renderer.setSize(600, 400);
             renderer.setClearColor(0xffffff, 1);
             $("#threecontainer").append(renderer.domElement);
 
             // camera
-            camera = new THREE.PerspectiveCamera(25, $(window).width()/$(window).height(), 0.1, 10000);
+            camera = new THREE.PerspectiveCamera(25, 600/400, 0.1, 10000);
 
             camera.position.x = 500;
             camera.position.y = 500;
@@ -166,10 +166,10 @@ co<!DOCTYPE html>
           };
 
           function onWindowResize() {
-            camera.aspect = $(window).width()/$(window).height();
-            camera.updateProjectionMatrix();
-            renderer.setSize($(window).width(), $(window).height());
-            render();
+            //camera.aspect = $(window).width()/$(window).height();
+            //camera.updateProjectionMatrix();
+            //renderer.setSize($(window).width(), $(window).height());
+            //render();
           };
 
           $(function(){
@@ -261,7 +261,11 @@ co<!DOCTYPE html>
       <hr>
 
       <footer>
-        
+          <h2 class="text-muted">Thanks</h2>
+          <ul>
+            <li><a href="http://threejs.org">three.js</a></li>
+            <li><a href="https://github.com/torstensprenger/threeleapcontrols">threeleapcontrols</a></li>
+          </ul>
       </footer>
     </div> <!-- /container -->
 

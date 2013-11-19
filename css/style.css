@@ -1,17 +1,16 @@
 #info {
   position: absolute;
-  width: 800px;
-  margin-left: -400px;
+  width: 600px;
+  margin-left: -300px;
   left: 50%;
   text-align: center;
   overflow: hidden;
   z-index: 2;
 }
 
-#container {
-  position: absolute;
+#threecontainer {
   display: block;
-  height: auto;
+  height: 400px;
   width: auto;
   top: 0;
   left: 0;
